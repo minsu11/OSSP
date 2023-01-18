@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   font-size: 10px;
 }
@@ -20,6 +15,8 @@ a {
 .board_wrap {
   width: 1000px;
   margin: 100px auto;
+  margin-top: 0px;
+  padding-top: 200px;
 }
 
 .board_title {

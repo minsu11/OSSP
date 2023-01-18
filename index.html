@@ -8,7 +8,7 @@
     <meta name="description" content="A blog website about travelling" />
     <meta name="author" content="Madhur Taneja" />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
@@ -18,100 +18,270 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <span class="navbar-toggle" id="js-navbar-toggle">
-        <i class="fas fa-bars"></i>
-      </span>
+    <div id="header" class="deactive">
+      <nav class="navbar">
+        <h1 class="logo"><a href="#">Blog</a></h1>
 
-      <a href="#" class="logo">Blog</a>
+        <ul class="main-nav" id="js-menu">
+          <li><a href="#section1" class="nav-links">Home</a></li>
 
-      <ul class="main-nav" id="js-menu">
-        <li>
-          <a href="#" class="nav-links">Home</a>
-        </li>
+          <li>
+            <a href="#section2" class="nav-links">About Us</a>
+          </li>
 
-        <li>
-          <a href="pages/AboutUsComponent.html" class="nav-links">About Us</a>
-        </li>
+          <li>
+            <a href="pages/BlogsComponent.html" class="nav-links">Blogs</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-        <li>
-          <a href="pages/BlogsComponent.html" class="nav-links">Blogs</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!--메인사진-->
-    <div class="container">
-      <div>
-        <img src="images/cover.jpg" class="cover" />
-      </div>
-
-      <!-- Destination 1 -->
-      <div class="destinations-container">
+    <!---main contents-->
+    <div id="section1" class="bg_image">
+      <div class="content_wrapper">
+        <div class="hi">
+          <h1>Park Min Su <br />Personal Blog</h1>
+        </div>
         <div>
-          <figure>
-            <img
-              src="images/mountains.jpg"
-              class="destinations"
-              alt="Destinations"
-            />
-
-            <figcaption>Fig.1 - Coorg, Karnataka, India.</figcaption>
-          </figure>
+          <button class="btn_about"><a href="#section2">About</a></button>
         </div>
-
-        <div class="caption">
-          <h5>Mountains</h5>
-          <p>
-            Everybody wants to reach the peak, but there is no growth on the top
-            of a mountain. It is in the valley that we slog through the lush
-            grass and rich soil, learning and becoming what enables us to summit
-            life’s next peak. That's why mountains are always my favorite
-            destinations.
-          </p>
-        </div>
-      </div>
-
-      <!-- Destination 2 -->
-      <div class="destinations-container">
-        <div class="caption">
-          <h5>Beaches</h5>
-
-          <p>
-            Sky above, sand below, peace within. Look up at the cerulean blue
-            sky. Feel the warm sugar sand between your toes. Find inner peace
-            with all of the Gulf Coast beauty that surrounds you. It's so easy
-            to be relaxed here.
-          </p>
-        </div>
-
-        <div>
-          <figure>
-            <img
-              src="images/beaches.jpg"
-              class="destinations"
-              alt="Destinations"
-            />
-            <figcaption>Fig.2- Goa, India</figcaption>
-          </figure>
-        </div>
-        <main class="grid-container">
-          <section class="grid-item profile">
-            <img src="../images/profile_pic.jpg" class="dp" />
-            <h2>Park Min Su</h2>
-            <h4>College student</h4>
-          </section>
-          <section class="grid-item summary">
-            <p class="summary-text">- chosun university<br />asd</p>
-          </section>
-        </main>
       </div>
     </div>
 
-    <div class="clear-div"></div>
+    <div id="section2" class="bg_image">
+      <div class="content_wrapper_2">
+        <div class="title_about">
+          <h1>About</h1>
+        </div>
+        <div class="profile_img hover1">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/64/Chosun_University_Symbol_%28Round%29.png"
+            alt="profile"
+            class="profile"
+          />
+        </div>
+        <div class="about_desc">
+          <p>
+            - 조선대학교 컴퓨터 공학과<br />
+            - 백엔드 공부 중<br />
+          </p>
+        </div>
+        <div class="title_skills"><h2>Study</h2></div>
+        <div class="skills">
+          <ul>
+            <a href="#section3" class="content_btn"><li>HTML</li></a>
+            <a href="#section3" class="content_btn"><li>CSS</li></a>
+            <a href="#section3" class="content_btn"><li>JavaScript</li></a>
+            <a href="#section3" class="content_btn"><li>Java</li></a>
+          </ul>
+        </div>
+        <div class="btn_contact hover1">
+          <button><a href="#section4">Contact</a></button>
+        </div>
+      </div>
+    </div>
 
-    <footer class="footer">
-      <p class="footer-content">© 2023 - ossp-minsu</p>
+    <div id="section3" class="bg_image">
+      <div class="board_wrap">
+        <div class="board_title">
+          <strong>HTML</strong>
+          <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+        </div>
+        <div class="board_list_wrap">
+          <div class="board_list">
+            <div class="top">
+              <div class="num">번호</div>
+              <div class="title">제목</div>
+              <div class="writer">글쓴이</div>
+              <div class="date">작성일</div>
+              <div class="count">조회</div>
+            </div>
+            <div>
+              <div class="num">5</div>
+              <div class="title">
+                <a href="view.html">글 제목이 들어갑니다.</a>
+              </div>
+              <div class="writer">박민수</div>
+              <div class="date">2023.1.17</div>
+              <div class="count">33</div>
+            </div>
+            <div>
+              <div class="num">4</div>
+              <div class="title">
+                <a href="view.html">글 제목이 들어갑니다.</a>
+              </div>
+              <div class="writer">박민수</div>
+              <div class="date">2023.1.17</div>
+              <div class="count">33</div>
+            </div>
+            <div>
+              <div class="num">3</div>
+              <div class="title">
+                <a href="view.html">글 제목이 들어갑니다.</a>
+              </div>
+              <div class="writer">박민수</div>
+              <div class="date">2023.1.16</div>
+              <div class="count">33</div>
+            </div>
+            <div>
+              <div class="num">2</div>
+              <div class="title">
+                <a href="view.html">글 제목이 들어갑니다.</a>
+              </div>
+              <div class="writer">박민수</div>
+              <div class="date">2023.1.15</div>
+              <div class="count">33</div>
+            </div>
+            <div>
+              <div class="num">1</div>
+              <div class="title">
+                <a href="view.html">글 제목이 들어갑니다.</a>
+              </div>
+              <div class="writer">박민수</div>
+              <div class="date">2023.1.15</div>
+              <div class="count">33</div>
+            </div>
+          </div>
+          <div class="board_page">
+            <a href="#" class="bt first"><<</a>
+            <a href="#" class="bt prev"><</a>
+            <a href="#" class="num on">1</a>
+            <a href="#" class="num">2</a>
+            <a href="#" class="num">3</a>
+            <a href="#" class="num">4</a>
+            <a href="#" class="num">5</a>
+            <a href="#" class="bt next">></a>
+            <a href="#" class="bt last">>></a>
+          </div>
+          <div class="bt_wrap">
+            <a href="write.html" class="on">등록</a>
+            <a href="#section4" class="on">CSS</a>
+            <!--<a href="#">수정</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section4" class="bg_image">
+      <div class="board_wrap">
+        <div class="board_title">
+          <strong>HTML</strong>
+          <p>공지사항을 빠르고 정확하게 안내해드립니다.</p>
+        </div>
+        <div class="board_list_wrap">
+          <div class="board_list">
+            <div class="top">
+              <div class="num">번호</div>
+              <div class="title">제목</div>
+              <div class="writer">글쓴이</div>
+              <div class="date">작성일</div>
+              <div class="count">조회</div>
+            </div>
+            <div>
+              <div class="num">5</div>
+              <div class="title">
+                <a href="view.html">글 제목이 들어갑니다.</a>
+              </div>
+              <div class="writer">박민수</div>
+              <div class="date">2023.1.17</div>
+              <div class="count">33</div>
+            </div>
+            <div>
+              <div class="num">4</div>
+              <div class="title">
+                <a href="view.html">글 제목이 들어갑니다.</a>
+              </div>
+              <div class="writer">박민수</div>
+              <div class="date">2023.1.17</div>
+              <div class="count">33</div>
+            </div>
+            <div>
+              <div class="num">3</div>
+              <div class="title">
+                <a href="view.html">글 제목이 들어갑니다.</a>
+              </div>
+              <div class="writer">박민수</div>
+              <div class="date">2023.1.16</div>
+              <div class="count">33</div>
+            </div>
+            <div>
+              <div class="num">2</div>
+              <div class="title">
+                <a href="view.html">글 제목이 들어갑니다.</a>
+              </div>
+              <div class="writer">박민수</div>
+              <div class="date">2023.1.15</div>
+              <div class="count">33</div>
+            </div>
+            <div>
+              <div class="num">1</div>
+              <div class="title">
+                <a href="view.html">글 제목이 들어갑니다.</a>
+              </div>
+              <div class="writer">박민수</div>
+              <div class="date">2023.1.15</div>
+              <div class="count">33</div>
+            </div>
+          </div>
+          <div class="board_page">
+            <a href="#" class="bt first"><<</a>
+            <a href="#" class="bt prev"><</a>
+            <a href="#" class="num on">1</a>
+            <a href="#" class="num">2</a>
+            <a href="#" class="num">3</a>
+            <a href="#" class="num">4</a>
+            <a href="#" class="num">5</a>
+            <a href="#" class="bt next">></a>
+            <a href="#" class="bt last">>></a>
+          </div>
+          <div class="bt_wrap">
+            <a href="write.html" class="on">등록</a>
+            <!--<a href="#">수정</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear-div"></div>
+    <footer class="aboutus-footer">
+      <div class="footer-container">
+        <div class="flex-column">
+          <h4>Location</h4>
+          <p>Hyderabad</p>
+        </div>
+        <p class="footer-content">© 2023 - ossp-minsu</p>
+        <div class="flex-column">
+          <h4>Around the Web</h4>
+          <ul class="social-links-container">
+            <li>
+              <a href="https://www.tistory.com/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/madhur-taneja"
+                target="_blank"
+              >
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/minsu11" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
