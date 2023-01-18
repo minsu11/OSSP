@@ -276,3 +276,7 @@ a {
   border: 0;
   resize: vertical;
 }
+
+.title .view {
+  color: #000;
+}
